@@ -18,13 +18,13 @@ window.addEventListener("scroll", function(){
 let enlacesHeader = document.querySelectorAll(".enlaces-header")[0];
 let semaforo = true;
 
-document.querySelectorAll(".hamburguer").addEventListener("click", function(){
+document.querySelectorAll(".hamburguer")[0].addEventListener("click", function(){
  if(semaforo){
-      document.querySelectorAll(".hamburguer")[0].style.color="#fff";
+      document.querySelectorAll(".hamburguer")[0].style.color ="#fff";
       semaforo= false;
    }else{
-      document.querySelector(".hamburguer")[0].style.color = "#000";
-      semaforo = true;
+    document.querySelectorAll(".hamburguer")[0].style.color ="#000";
+    semaforo= true;
     }
     
     enlacesHeader.classList.toggle("menudos")
